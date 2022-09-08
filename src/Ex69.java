@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Ex69 {
 
     public static boolean palindrome(String text) {
-        // write your code here
-        if (reverse(text)==text){
+        if (reverse(text).equals(text)){
             return true;
         }
         else {
@@ -16,9 +15,10 @@ public class Ex69 {
         String reversed="";
         char character='b';
         int n=text.length()-1;
-        while (n>0) {
+        while (n>=0) {
             character = text.charAt(n);
             reversed=reversed+character;
+            n--;
         }
         return reversed;
     }
