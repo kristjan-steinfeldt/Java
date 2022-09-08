@@ -12,18 +12,23 @@ public class Ex69 {
         }
     }
 
-    private static String reverse(String text) {
+    private static CharSequence reverse(String text) {
         String reversed="";
-        char character = word.charAt(word.length());
-
+        char character='b';
+        int n=text.length()-1;
+        while (n>0) {
+            character = text.charAt(n);
+            reversed=reversed+character;
+        }
         return reversed;
     }
 
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
 
+
+        Scanner reader = new Scanner(System.in);  // Reading from System.in
         System.out.println("Type a text: ");
-        String text = reader.nextLine();
+        String text = reader.next();
         if (palindrome(text)) {
             System.out.println("The text is a palindrome!");
         } else {
