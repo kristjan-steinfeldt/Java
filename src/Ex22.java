@@ -7,7 +7,7 @@ public class Ex22 {
             String password = "carrot";
             Scanner reader = new Scanner(System.in);  // Reading from System.in
             System.out.println("Enter Your Password: ");
-            String userPass = reader.next(); // Scans the next token of the input as an int.
+            String userPass = reader.next(); // Scans the next token of the input as an string.
             if (userPass.equals(password)) {
                 System.out.println("Password correct");
                 System.out.println("Super secret");
