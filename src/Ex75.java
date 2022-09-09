@@ -1,11 +1,16 @@
 public class Ex75 {
     public static class DecreasingCounter {
         private int value;   // object variable that remembers the value of the counter
+        private int StartVal;
 
         public DecreasingCounter(int valueAtStart) {
             this.value = valueAtStart;
-        }
+            this.StartVal = valueAtStart;
 
+        }
+        public void setInitial(){
+        this.value=StartVal;
+        }
         public void printValue() {
             System.out.println("value: " + this.value);
         }
@@ -19,6 +24,7 @@ public class Ex75 {
         public void reset() {
             this.value=0;
         }
+
     }
 
 
