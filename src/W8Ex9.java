@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class W9Ex9 {
+public class W8Ex9 {
     public static class RegistrationPlate {
         // ATTENTION: the object variable types are final, meaning that their value cannot be changed!
         private final String regCode;
